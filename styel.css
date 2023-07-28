@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+body {
+  background-color: #001;
+}
+.container {
+  display: flex;
+}
+/* start menu */
+/* start profile */
+
+.profile {
+  display: flex;
+  text-transform: capitalize;
+  gap: 25px;
+
+  align-items: center;
+}
+.img-box {
+  flex-shrink: 0;
+}
+.img-box > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.profile > h2 {
+  flex-grow: 1;
+}
+/* end profile */
+/* menu container */
+.menu {
+  background-color: #123;
+  width: 60px;
+  height: 101vh;
+  padding: 20px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+}
+.menu:hover {
+  width: 260px;
+}
+ul {
+  list-style: none;
+  height: 95%;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  display: flex;
+  padding: 15px 10px;
+  margin: 5px 0px;
+  gap: 40px;
+  align-items: center;
+}
+i {
+  color: #fff;
+}
+ul > li > a > i {
+  font-size: 30px;
+}
+/* end menu  container */
+/* start log out */
+.log-out {
+  position: absolute;
+  bottom: 0;
+  transform: 2s;
+  width: 100%;
+}
+
+.min-long-out {
+  width: 30px;
+}
+.log-out > a:hover {
+  background-color: red;
+}
+/* end start log out */
+/* end menu */
+
+/* container dash borda */
+.container-dash-bord {
+  width: 100%;
+  padding: 10px 10px 10px 110px;
+}
+.header-dashborda {
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: blue;
+}
+/* start info */
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.card {
+  flex-basis: 200px;
+  height: 100px;
+  background-color: #123;
+  border-radius: 10px;
+  display: flex;
+  flex-grow: 1;
+}
+/* end info */
+/* start table */
+table {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  border-spacing: 8px;
+}
+
+th,
+td {
+  border-radius: 8px;
+  height: 40px;
+  background-color: #123;
+}
+/* end tabel */
+/* END container dash board */
+/* start hover */
+
+.card:hover,
+a:hover,
+td:hover {
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  background-color: rgba(240, 255, 255, 0.559);
+  transition: 1s;
+}
+
+/* end hover */
